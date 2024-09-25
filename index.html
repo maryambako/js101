@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 101</title>
+</head>
+
+<body>
+    <center>
+        <h1>Hello World</h1>
+    </center>
+    <button id="brn">Change Text</button>
+    <button id="brn2">Change Bg</button>
+    <button id="brn3">Change Bg</button>
+
+    <script>
+
+        document.querySelector("#brn").addEventListener('click', () => {
+            document.querySelector("h1").innerText = "Hello Class"
+
+        })
+
+        document.querySelector("#brn2").addEventListener('click', () => {
+            document.querySelector("body").style = "background-color: red;"
+
+        })
+
+        document.querySelector("#brn3").addEventListener('click', () => {
+            document.querySelector("body").style = "background-color: green;"
+
+        })   
+    </script>
+</body>
+
+</html>
